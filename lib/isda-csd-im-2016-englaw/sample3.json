@@ -8,9 +8,7 @@
     "account": {
       "id": "01692a4c-9e0a-e064-aa71-f7bb52bfd272",
       "name": "regnosys.com",
-      "domains": [
-        "regnosys.com"
-      ]
+      "domains": ["regnosys.com"]
     }
   },
   "partyB": {
@@ -22,9 +20,7 @@
     "account": {
       "id": "baafd40d-0eaa-4eea-b895-48c3915c9651",
       "name": "ISDA",
-      "domains": [
-        "isda.org"
-      ]
+      "domains": ["isda.org"]
     }
   },
   "participants": [
@@ -56,10 +52,7 @@
     "dateAdded": "2018-09-28",
     "hasSchema": true,
     "version": "0.9",
-    "supportedExtensions": [
-      "pdf",
-      "docx"
-    ],
+    "supportedExtensions": ["pdf", "docx"],
     "referenceFilesExtensions": [],
     "supportsOfflineNegotiations": false,
     "workflowType": "w1",

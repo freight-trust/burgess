@@ -6,14 +6,7 @@
     "title": "Burgess",
     "description": "TradeDocs.org Root Schema for Configurator of Shipping Agreements",
     "default": {},
-    "required": [
-      "checked",
-      "dimensions",
-      "id",
-      "name",
-      "price",
-      "tags"
-    ],
+    "required": ["checked", "dimensions", "id", "name", "price", "tags"],
     "parties": {
       "partyA_name": "carrier",
       "partyB_name": "shipper",
