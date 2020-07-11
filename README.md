@@ -16,22 +16,22 @@ partyB && partyC
 ```
 
 ### General Terms
-relationship_with_the_control_agreement: should always be the `carrier`
-execution_language: should pertain the `carrier` langauge that they use
-date_of_tradedocs_master_agreement: joining agreement date
-execution_date: date upon they have entered into 
+relationship_with_the_control_agreement: should always be the `carrier` <br />
+execution_language: should pertain the `carrier` langauge that they use<br />
+date_of_tradedocs_master_agreement: joining agreement date<br />
+execution_date: date upon they have entered into <br />
 
-delivery_in_lieu_right: 
-	- right: applicable
-	- volumetric: embeded
+delivery_in_lieu_right: <br />
+	- right: applicable<br />
+	- volumetric: embeded<br />
 
-umbrella_agreement_and_principal_identification
-	- urn:freight-trust:rulebook:authority // `refers to the omnibus/rulebook, where authority = active version`
+umbrella_agreement_and_principal_identification<br />
+	- urn:freight-trust:rulebook:authority // `refers to the omnibus/rulebook, where authority = active version`<br />
 
-resolution_time:
-	- date:time upon which delivery must be completed, otherwise it enters `detention` period
+resolution_time:<br />
+	- date:time upon which delivery must be completed, otherwise it enters `detention` period<br />
 
-conveyance_asset:
+conveyance_asset:<br />
 
 
 ```json	
@@ -51,3 +51,7 @@ conveyance_asset:
       "lei": "967600BJ1XXIQR6G3948"
     }
 ```
+
+## License
+
+Mozilla Public License 2.0
