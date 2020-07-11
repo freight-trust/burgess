@@ -7,9 +7,7 @@
     "account": {
       "id": "baafd40d-0eaa-4eea-b895-48c3915c9651",
       "name": "ISDA",
-      "domains": [
-        "isda.org"
-      ]
+      "domains": ["isda.org"]
     }
   },
   "partyB": {
@@ -21,9 +19,7 @@
     "account": {
       "id": "0170afc3-c83a-6164-b684-2da207dae7a3",
       "name": "nigelcobb.co.uk",
-      "domains": [
-        "nigelcobb.co.uk"
-      ]
+      "domains": ["nigelcobb.co.uk"]
     }
   },
   "participants": [
@@ -55,10 +51,7 @@
     "dateAdded": "2019-01-31",
     "hasSchema": true,
     "version": "0.7",
-    "supportedExtensions": [
-      "pdf",
-      "docx"
-    ],
+    "supportedExtensions": ["pdf", "docx"],
     "referenceFilesExtensions": [],
     "supportsOfflineNegotiations": true,
     "workflowType": "w1",

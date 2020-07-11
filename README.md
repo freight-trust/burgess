@@ -2,17 +2,14 @@
 
 Jurisdictional Regimes and Agreement Configurator
 
-
 ## Configuration
 
 ### Tariff Control Events
+
 partyB && partyC
 
 ```json
-[
-"partyB_tarrif_event_upon_crossing",
-"partyC_tarrif_event_upon_crossing"
-]
+["partyB_tarrif_event_upon_crossing", "partyC_tarrif_event_upon_crossing"]
 ```
 
 ### General Terms
@@ -33,13 +30,11 @@ resolution_time:<br />
 
 conveyance_asset:<br />
 
-
-```json	
+```json
 	valuation_of_appropriated_collateral: {
         "specified": "false"
       }
 ```
-
 
 ## Examples
 
