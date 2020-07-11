@@ -1,114 +1,116 @@
-[{
-	"$schema": "http://json-schema.org/draft-07/schema",
-	"$id": "http://freighttrust.com/base",
-	"type": "object",
-	"title": "Burgess",
-	"description": "TradeDocs.org Root Schema for Configurator of Shipping Agreements",
-	"default": {},
-	"required": [
-		"checked",
-		"dimensions",
-		"id",
-		"name",
-		"price",
-		"tags"
-	],
-	"parties": {
-		"partyA_name": "carrier",
-		"partyB_name": "shipper",
-		"partyC_name": "cosignee"
-	},
-	"base_currency": {
-		"currency": "United States Dollar"
-	},
-	"execution_language": {
-		"execution_language": "IN WITNESS of which this Deed has been executed as a deed and has been delivered on the date first above written."
-	},
-	"signature_blocks": {
-		"partyA_standard": "EXECUTED as a deed by (Name of Company):...................................)<br><br>.................................................................................................................)<br><br>acting by (Name of first signatory:).....................................................) .......................... (Signature)<br><br>[and (Name of second signatory:).......................................................) .......................... (Signature)]<br><br>[acting under the authority of that company] [in the presence of:<br><br>Witness's Signature: ...........................................<br><br>Witness's Name: .................................................<br><br>Witness's Address: .............................................<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.............................................]",
-		"partyB_standard": "EXECUTED as a deed by (Name of Company):...................................)<br><br>.................................................................................................................)<br><br>acting by (Name of first signatory:).....................................................) .......................... (Signature)<br><br>[and (Name of second signatory:).......................................................) .......................... (Signature)]<br><br>[acting under the authority of that company] [in the presence of:<br><br>Witness's Signature: ...........................................<br><br>Witness's Name: .................................................<br><br>Witness's Address: .............................................<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.............................................]"
-	},
-	"access_conditions": {
-		"partyA_force_majeure": "not_applicable",
-		"partyB_tarrif_event_upon_crossing": "not_applicable",
-		"partyB_force_majeure": "not_applicable",
-		"partyB_illegality": "not_applicable",
-		"partyB_tax_event": "not_applicable",
-		"partyA_illegality": "not_applicable",
-		"partyA_tax_event": "not_applicable"
-	},
-	"relationship_with_the_control_agreement": {
-		"partyA_control_agreement_relationship": "applicable",
-		"partyB_control_agreement_relationship": "not_applicable"
-	},
-	"conditions_precedent": {
-		"conditions_precedent": "not_specified"
-	},
-	"interpretation": {
-		"paragraph_11j_is": "not_specified"
-	},
-	"control_agreement_as_a_credit_support_document": {
-		"partyA_control_agreement_as_a_credit_support_document": "yes",
-		"partyB_control_agreement_as_a_credit_support_document": "no"
-	},
-	"date_of_tradedocs_master_agreement": {
-		"master_agreement_date": "2019-12-02"
-	},
-	"custodian_name": {
-		"partyA_custodian_name": "JPM",
-		"partyB_custodian_name": "CITI"
-	},
-	"sensitivities_to_equity_indices_funds_etfs": {
-		"sensitivities_equity_indices_funds_etfs": "not_specified"
-	},
-	"one_way_provisions": {
-		"is_applicable": "applicable",
-		"posting_party": "partyA"
-	},
-	"sensitivities_to_commodity_indices": {
-		"sensitivities_commodity_indices": "not_specified"
-	},
-	"additional_obligations": {
-		"additional_obligations": "none"
-	},
-	"delivery_in_lieu_right": {
-		"right": "applicable"
-	},
-	"umbrella_agreement_and_principal_identification": {
-		"is_applicable": "urn:freight-trust:rulebook:authority"
-	},
-	"custodian_event": {
-		"definition": "applicable"
-	},
-	"resolution_time": {
-		"specified": "true",
-		"time": "13:00",
-		"location": "London, United Kingdom"
-	},
-	"conveyance_asset": {
-		"valuation_of_appropriated_collateral": {
-			"specified": "false"
-		}
-	},
-	"history": {
-		"created": {
-			"user": "MIT test_user",
-			"timestamp": "2020-03-05T16:13:17.510Z"
-		},
-		"initiatedInvite": {
-			"user": "MIT test_user",
-			"timestamp": "2020-03-06T12:27:13.589Z"
-		},
-		"confirmedPartyA": {
-			"user": "MIT test_user",
-			"timestamp": "2020-03-06T13:43:39.365Z"
-		},
-		"executed": {
-			"user": "MIT test_user",
-			"timestamp": "2020-03-06T13:45:10.271Z"
-		},
-		"externalDocumentComments": [],
-		"internalElectionComments": {},
-		"externalElectionComments": {}
-	}
-}]
+[
+  {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://freighttrust.com/base",
+    "type": "object",
+    "title": "Burgess",
+    "description": "TradeDocs.org Root Schema for Configurator of Shipping Agreements",
+    "default": {},
+    "required": [
+      "checked",
+      "dimensions",
+      "id",
+      "name",
+      "price",
+      "tags"
+    ],
+    "parties": {
+      "partyA_name": "carrier",
+      "partyB_name": "shipper",
+      "partyC_name": "cosignee"
+    },
+    "base_currency": {
+      "currency": "United States Dollar"
+    },
+    "execution_language": {
+      "execution_language": "IN WITNESS of which this Deed has been executed as a deed and has been delivered on the date first above written."
+    },
+    "signature_blocks": {
+      "partyA_standard": "EXECUTED as a deed by (Name of Company):...................................)<br><br>.................................................................................................................)<br><br>acting by (Name of first signatory:).....................................................) .......................... (Signature)<br><br>[and (Name of second signatory:).......................................................) .......................... (Signature)]<br><br>[acting under the authority of that company] [in the presence of:<br><br>Witness's Signature: ...........................................<br><br>Witness's Name: .................................................<br><br>Witness's Address: .............................................<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.............................................]",
+      "partyB_standard": "EXECUTED as a deed by (Name of Company):...................................)<br><br>.................................................................................................................)<br><br>acting by (Name of first signatory:).....................................................) .......................... (Signature)<br><br>[and (Name of second signatory:).......................................................) .......................... (Signature)]<br><br>[acting under the authority of that company] [in the presence of:<br><br>Witness's Signature: ...........................................<br><br>Witness's Name: .................................................<br><br>Witness's Address: .............................................<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.............................................]"
+    },
+    "access_conditions": {
+      "partyA_force_majeure": "not_applicable",
+      "partyB_tarrif_event_upon_crossing": "not_applicable",
+      "partyB_force_majeure": "not_applicable",
+      "partyB_illegality": "not_applicable",
+      "partyB_tax_event": "not_applicable",
+      "partyA_illegality": "not_applicable",
+      "partyA_tax_event": "not_applicable"
+    },
+    "relationship_with_the_control_agreement": {
+      "partyA_control_agreement_relationship": "applicable",
+      "partyB_control_agreement_relationship": "not_applicable"
+    },
+    "conditions_precedent": {
+      "conditions_precedent": "not_specified"
+    },
+    "interpretation": {
+      "paragraph_11j_is": "not_specified"
+    },
+    "control_agreement_as_a_credit_support_document": {
+      "partyA_control_agreement_as_a_credit_support_document": "yes",
+      "partyB_control_agreement_as_a_credit_support_document": "no"
+    },
+    "date_of_tradedocs_master_agreement": {
+      "master_agreement_date": "2019-12-02"
+    },
+    "custodian_name": {
+      "partyA_custodian_name": "JPM",
+      "partyB_custodian_name": "CITI"
+    },
+    "sensitivities_to_equity_indices_funds_etfs": {
+      "sensitivities_equity_indices_funds_etfs": "not_specified"
+    },
+    "one_way_provisions": {
+      "is_applicable": "applicable",
+      "posting_party": "partyA"
+    },
+    "sensitivities_to_commodity_indices": {
+      "sensitivities_commodity_indices": "not_specified"
+    },
+    "additional_obligations": {
+      "additional_obligations": "none"
+    },
+    "delivery_in_lieu_right": {
+      "right": "applicable"
+    },
+    "umbrella_agreement_and_principal_identification": {
+      "is_applicable": "urn:freight-trust:rulebook:authority"
+    },
+    "custodian_event": {
+      "definition": "applicable"
+    },
+    "resolution_time": {
+      "specified": "true",
+      "time": "13:00",
+      "location": "London, United Kingdom"
+    },
+    "conveyance_asset": {
+      "valuation_of_appropriated_collateral": {
+        "specified": "false"
+      }
+    },
+    "history": {
+      "created": {
+        "user": "MIT test_user",
+        "timestamp": "2020-03-05T16:13:17.510Z"
+      },
+      "initiatedInvite": {
+        "user": "MIT test_user",
+        "timestamp": "2020-03-06T12:27:13.589Z"
+      },
+      "confirmedPartyA": {
+        "user": "MIT test_user",
+        "timestamp": "2020-03-06T13:43:39.365Z"
+      },
+      "executed": {
+        "user": "MIT test_user",
+        "timestamp": "2020-03-06T13:45:10.271Z"
+      },
+      "externalDocumentComments": [],
+      "internalElectionComments": {},
+      "externalElectionComments": {}
+    }
+  }
+]
