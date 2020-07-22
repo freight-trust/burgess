@@ -28,7 +28,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
-    "standard-version": "^8.0.1"
+    "standard-version": "^8.0.0"
   },
   "husky": {
     "hooks": {
