@@ -4,9 +4,6 @@
         "targetNamespace": "http://www.freighttrust.com/Schemas/tdocs/Common/2020/06",
         "version": 3.0.0,
         "elementFormDefault": "qualified",
-        "xmlns": "http://www.cargowise.com/Schemas/Common/tdocs/Common/2020/06",
-        "xmlns:xs": "http://www.w3.org/2001/XMLSchema",
-        "openapi": "http://www.freighttrust.com/Schemas/tdocs/Common/2020/06"
         "include": {"schemaLocation": "CommonCommon.json"},
         "element": {
             "name": "CommonShipment",
