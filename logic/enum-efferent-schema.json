@@ -1,0 +1,10 @@
+{
+  "title": "Output",
+  "type": "object",
+  "properties": {
+    "dummy": {
+      "type": "string",
+      "title": "A static field"
+    }
+  }
+}
