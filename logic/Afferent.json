@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "title": "independentClass enum",
+  "properties": {
+    "coupling": {
+      "type": "Afferent"
+    },
+    "bar": {
+      "type": "number"
+    }
+  }
+}

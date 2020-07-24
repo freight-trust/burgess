@@ -1,0 +1,51 @@
+[{
+        "key": "LEI",
+        "value": "string",
+        "composable": "${#LEI}"
+    },
+    {
+        "key": "VOCCs",
+        "value": true,
+        "composable": "${OCC}"
+    },
+    {
+        "key": "NVOCC",
+        "value": false,
+        "composable": "${OCC}"
+    },
+    {
+        "key": "NAIC",
+        "value": "string",
+        "composable": "${#NAIC}"
+    },
+    {
+        "key": "prefix",
+        "value": "string",
+        "composable": "${string}"
+    },
+    {
+        "key": "legal entity name",
+        "value": "string",
+        "composable": "${string}"
+    },
+    {
+        "key": "vesselCode",
+        "value": "string",
+        "composable": "$vesselCode"
+    },
+    {
+        "key": "voyageNumber",
+        "value": "string",
+        "composable": "$voyageNumber"
+    },
+    {
+        "key": "SCAC",
+        "value": "string",
+        "composable": "$SCAC"
+    },
+    {
+        "key": "unlocCode",
+        "value": "string",
+        "composable": "$unlocCode"
+    }
+]
