@@ -3,10 +3,17 @@
 </p>
 <br>
 <!-- Badges Start -->
-<p align="center">
-<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/freighttrustnet?label=%40FreightTrustNet&style=social">
-<img alt="Open Source License" src="https://img.shields.io/github/license/freight-trust/releases?style=social">
+<p   align="center">
+<img   alt="Twitter Follow"   src="https://img.shields.io/twitter/follow/freighttrustnet?label=%40FreightTrustNet&style=social">
+ <a   href="https://t.me/freighttrust">
+ <img   alt="Join Freight Trust's Public Telegram"   src="https://img.shields.io/badge/telegram-%40freighttrust-blue">
+ </a>
+<img   src="https://img.shields.io/github/package-json/keywords/freight-trust/tdocs">
+![GitHub](https://img.shields.io/github/license/freight-trust/burgess)
+</p>
 <!-- Badges End -->
+
+
 
 # Burgess
 
