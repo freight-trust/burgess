@@ -8,7 +8,6 @@
  <a   href="https://t.me/freighttrust">
  <img   alt="Join Freight Trust's Public Telegram"   src="https://img.shields.io/badge/telegram-%40freighttrust-blue">
  </a>
-<img   src="https://img.shields.io/github/package-json/keywords/freight-trust/tdocs">
 <img   src="https://img.shields.io/github/license/freight-trust/burgess>
 </p>
 <!-- Badges End -->
@@ -73,34 +72,34 @@ ISA:00:          :00:          :01:1515151515     :01:515151
 ```
 
 
-ISA	Interchange Control Header
-GS	Functional Group Header
-ST	Transaction Set Header
-BGN	Beginning Segment
-N9	Reference Identification
-TRN	Trace
-AMT	Monetary Amount
-QTY	Quantity
-SE	Transaction Set Trailer
-GE	Functional Group Trailer
-IEA	Interchange Control Trailer
+ISA	Interchange Control Header <br>
+GS	Functional Group Header <br>
+ST	Transaction Set Header <br>
+BGN	Beginning Segment <br>
+N9	Reference Identification <br>
+TRN	Trace <br>
+AMT	Monetary Amount <br>
+QTY	Quantity <br>
+SE	Transaction Set Trailer <br>
+GE	Functional Group Trailer <br>
+IEA	Interchange Control Trailer <br>
 
 See [EDI Type Mappings for X12](https://github.com/freight-trust/protocol/blob/master/ROOT/TypeMaps.json) that is utilized `in protocol` for relevent EDI Segements.
 
 ## Primitives
 Defined ordered list 
 
-`PrimitiveEvent`
-`ExercisePrimitive`
-`AllocationPrimitive`
-`ContractFormationPrimitive`
-`ExecutionPrimitive`
-`InceptionPrimitive`
-`ObservationPrimitive`
-`QuantityChangePrimitive`
-`ResetPrimitive`
-`TermsChangePrimitive`
-`TransferPrimitive`
+`PrimitiveEvent` <br>
+`ExercisePrimitive` <br>
+`AllocationPrimitive` <br>
+`ContractFormationPrimitive` <br>
+`ExecutionPrimitive` <br>
+`InceptionPrimitive` <br>
+`ObservationPrimitive` <br>
+`QuantityChangePrimitive` <br>
+`ResetPrimitive` <br>
+`TermsChangePrimitive` <br>
+`TransferPrimitive` <br>
 
 ### ExecutionPrimitive
 
