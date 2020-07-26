@@ -47,13 +47,40 @@ We want to make smart contracts legal in the sense that the replicate all the ex
 You can read this article here detailing the concept
 [Applications of traditional contract principles to Smart Contracts](https://medium.com/freighttrust/application-of-traditional-contract-principles-to-smart-contracts-64cad84091bf)
 
-We then enable existing EDI transactions the ability to interact (i.e. create, move, delegate, transfer, etc) with these smart contracts, removing the issues of "legality and legal bindingness" of using a smart contract protocol versus traditional paper based documents, removing the need for "hash stored" protocol implematation [see protocolv1](https://github.com/freight-chain/protocol)
+We then enable existing EDI transactions the ability to interact (i.e. create, move, delegate, transfer, etc) with these smart contracts, removing the issues of "legality and legal bindingness" of using a smart contract protocol versus traditional paper based documents, removing the need for "hash stored" protocol implematatios of protocol v1.
+
+### What is EDI? 
+> When we say "EDI" we are talking about EDI X12 or EDI EDIFACT, to standards for communicating using ASC EDI.
+
+Understanding the Raw EDI data
+EDI files have a qualifier at the start of each record which determines the record layout. We can use this with the Match Pattern feature of Convert-to-XML to produce a unique set of elements for the information in each differently-structured row.
+
+For our sample, let's use a little X12 EDI document of type 831, "Application Control Totals" like this. We include this file (named 831.x12)
+
+```
+ISA:00:          :00:          :01:1515151515     :01:515151
+5151     :041201:1217:U:00403:000032123:0:P:*~GS:CT:99887766
+55:1122334455:20041201:1217:128:X:004030~ST:831:00128001~BGN
+:00:88200001:20041201~N9:BT:88200001~TRN:1:88200001~AMT:2:10
+0000.00~QTY:46:1~SE:7:00128001~GE:1:128~IEA:1:000032123~
+```
 
 
+ISA	Interchange Control Header
+GS	Functional Group Header
+ST	Transaction Set Header
+BGN	Beginning Segment
+N9	Reference Identification
+TRN	Trace
+AMT	Monetary Amount
+QTY	Quantity
+SE	Transaction Set Trailer
+GE	Functional Group Trailer
+IEA	Interchange Control Trailer
 
+See [EDI Type Mappings for X12](https://github.com/freight-trust/protocol/blob/master/ROOT/TypeMaps.json) that is utilized `in protocol` for relevent EDI Segements.
 
 ## Primitives
-
 Defined ordered list 
 
 `PrimitiveEvent`
@@ -67,9 +94,6 @@ Defined ordered list
 `ResetPrimitive`
 `TermsChangePrimitive`
 `TransferPrimitive`
-
-
-
 
 ### ExecutionPrimitive
 
