@@ -9,7 +9,7 @@
  <img   alt="Join Freight Trust's Public Telegram"   src="https://img.shields.io/badge/telegram-%40freighttrust-blue">
  </a>
 <img   src="https://img.shields.io/github/package-json/keywords/freight-trust/tdocs">
-![GitHub](https://img.shields.io/github/license/freight-trust/burgess)
+<img   src="https://img.shields.io/github/license/freight-trust/burgess>
 </p>
 <!-- Badges End -->
 
