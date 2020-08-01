@@ -1,0 +1,8 @@
+RuleML (  % Empty KB but allowing built-ins and libraries
+  Prefix(pred: <http://www.w3.org/2007/rif-builtin-predicate#>)
+  Prefix(func: <http://www.w3.org/2007/rif-builtin-function#>)
+  Prefix(math: <http://psoa.ruleml.org/lib/math#>)
+  Prefix(phys: <http://psoa.ruleml.org/lib/phys#>)
+  Import(<http://psoa.ruleml.org/lib/math.psoa>)
+  Import(<http://psoa.ruleml.org/lib/phys.psoa>)
+)
