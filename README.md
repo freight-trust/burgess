@@ -2,6 +2,16 @@
 
 Jurisdictional Regimes and Agreement Configurator
 
+
+## RuleML Support
+
+See http://psoa.ruleml.org for details of PSOA RuleML and PSOATransRun
+and https://github.com/RuleML/PSOATransRunComponents for the Java/ANTLR/... sources
+and http://psoa.ruleml.org/lib/ for the Prolog-targeting PSOA libraries.
+
+`   java -jar PSOATransRunLocal.jar -*.psoa `
+
+
 ## Configuration
 
 ### Tariff Control Events

@@ -1,0 +1,99 @@
+// LEXER:
+// Comments and whitespace:
+WHITESPACE  :  (' '|'\t'|'\r'|'\n')+ { $channel = HIDDEN; } ;
+COMMENT : '%' ~('\n')* { $channel = HIDDEN; } ;
+MULTI_LINE_COMMENT :  '<!--' (options {greedy=false;} : .* ) '-->' { $channel=HIDDEN; } ;
+
+// Keywords:
+DOCUMENT : 'Document' | 'RuleML' ;
+BASE : 'Base' ;
+IMPORT : 'Import' ;
+PREFIX : 'Prefix' ;
+GROUP : 'Group' | 'Assert' ;
+FORALL : 'Forall' ;
+EXISTS : 'Exists' ;
+AND : 'And' ;
+OR : 'Or' ;
+NAF : 'Naf';
+EXTERNAL : 'External';
+TOP : 'Top';
+
+//   Operators:
+IMPLICATION : ':-';
+EQUAL : '=';
+SUBCLASS : '##';
+INSTANCE : '#';
+SLOT_ARROW : '->' | '+>';
+SYMSPACE_OPER : '^^';
+
+//   Punctuation:
+LPAR : '(' ;
+RPAR : ')' ;
+LESS : '<' ;
+GREATER : '>' ;
+DEPSIGN: '+' | '-';
+LSQBR : '[' ;
+RSQBR : ']' ;
+
+
+//  Constants:
+NUMBER: ('+' | '-')? DIGIT+ ('.' DIGIT*)?;
+STRING: '"' (options {greedy=false;} : ~('"' | '\\' | EOL) | ECHAR)* '"';
+
+//  Identifiers:
+// IRI_REF : '<' IRI_START_CHAR (IRI_CHAR)+ '>' { setText(getFullIRI(iri)); };
+
+IRI_REF
+    : '<' IRI_REF_CHAR* '>' { String s = getText(); setText(s.substring(1, s.length() - 1)); }
+    ;
+
+fragment IRI_REF_CHAR
+    :  ~('<' | '>' | '"' | '{' | '}' | '|' | '^' | '`' | '\\' | '\u0000'..'\u0020')
+    ;
+
+
+// Modified from SPARQL 1.1
+NAMESPACE : PN_PREFIX? ':';
+fragment PN_PREFIX : PN_CHARS_BASE ((PN_CHARS|'.')* PN_CHARS)?;
+PN_LOCAL
+	: (PN_CHARS_U | DIGIT | PLX) (PN_CHARS | PLX)*;
+
+fragment PN_CHARS
+    : PN_CHARS_U
+    | { input.LA(2) != '>' }? => '-'
+    | DIGIT
+    | '\u00B7'
+    | '\u0300'..'\u036F'
+    | '\u203F'..'\u2040'
+    ;
+fragment PN_CHARS_U : PN_CHARS_BASE | '_';
+fragment PN_CHARS_BASE
+    : ALPHA
+    | '\u00C0'..'\u00D6'
+    | '\u00D8'..'\u00F6'
+    | '\u00F8'..'\u02FF'
+    | '\u0370'..'\u037D'
+    | '\u037F'..'\u1FFF'
+    | '\u200C'..'\u200D'
+    | '\u2070'..'\u218F'
+    | '\u2C00'..'\u2FEF'
+    | '\u3001'..'\uD7FF'
+    | '\uF900'..'\uFDCF'
+    | '\uFDF0'..'\uFFFD'
+    ;
+
+fragment PLX : PERCENT | PN_LOCAL_ESC;
+fragment PERCENT : '%' HEX HEX;
+fragment HEX : DIGIT | 'A'..'F' | 'a'..'f';
+fragment PN_LOCAL_ESC
+	:  '\\' ( '_' | '~' | '.' | '-' | '!' | '$' | '&' | '\'' | '(' | ')' | '*' | '+' | ','
+			| ';' | '=' | ':' | '/' | '?' | '#' | '@' | '%' );
+
+fragment ALPHA : 'a'..'z' | 'A'..'Z' ;
+fragment DIGIT : '0'..'9' ;
+
+VAR_ID : '?' PN_LOCAL?;
+
+fragment ECHAR : '\\' ('t' | 'b' | 'n' | 'r' | 'f' | '\\' | '"' | '\'');
+
+fragment EOL : '\n' | '\r';
