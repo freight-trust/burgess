@@ -1,14 +1,7 @@
 {
   "title": "Json-Editor Interactive Playground Example format",
   "type": "object",
-  "required": [
-    "title",
-    "desc",
-    "schema",
-    "startval",
-    "code",
-    "config"
-  ],
+  "required": ["title", "desc", "schema", "startval", "code", "config"],
   "properties": {
     "title": {
       "title": "Example Title",

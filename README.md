@@ -2,15 +2,13 @@
 
 Jurisdictional Regimes and Agreement Configurator
 
-
 ## RuleML Support
 
 See http://psoa.ruleml.org for details of PSOA RuleML and PSOATransRun
 and https://github.com/RuleML/PSOATransRunComponents for the Java/ANTLR/... sources
 and http://psoa.ruleml.org/lib/ for the Prolog-targeting PSOA libraries.
 
-`   java -jar PSOATransRunLocal.jar -*.psoa `
-
+`java -jar PSOATransRunLocal.jar -*.psoa`
 
 ## Configuration
 
@@ -23,20 +21,17 @@ partyB && partyC
 ```
 
 ### General Terms
+
 relationship_with_the_control_agreement: should always be the `carrier` <br />
 execution_language: should pertain the `carrier` langauge that they use<br />
 date_of_tradedocs_master_agreement: joining agreement date<br />
 execution_date: date upon they have entered into <br />
 
-delivery_in_lieu_right: <br />
-	- right: applicable<br />
-	- volumetric: embeded<br />
+delivery_in_lieu_right: <br /> - right: applicable<br /> - volumetric: embeded<br />
 
-umbrella_agreement_and_principal_identification<br />
-	- urn:freight-trust:rulebook:authority // `refers to the omnibus/rulebook, where authority = active version`<br />
+umbrella_agreement_and_principal_identification<br /> - urn:freight-trust:rulebook:authority // `refers to the omnibus/rulebook, where authority = active version`<br />
 
-resolution_time:<br />
-	- date:time upon which delivery must be completed, otherwise it enters `detention` period<br />
+resolution_time:<br /> - date:time upon which delivery must be completed, otherwise it enters `detention` period<br />
 
 conveyance_asset:<br />
 
