@@ -22,13 +22,13 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ci-publish": "latest",
-    "conventional-github-releaser": "latest",
+    "conventional-github-releaser": "^3.1.5",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
-    "standard-version": "^8.0.0"
+    "standard-version": "^8.0.2"
   },
   "husky": {
     "hooks": {
@@ -54,5 +54,8 @@
   "bugs": {
     "url": "https://github.com/freight-trust/burgess/issues"
   },
-  "homepage": "https://github.com/freight-trust/burgess#readme"
+  "homepage": "https://github.com/freight-trust/burgess#readme",
+  "dependencies": {
+    "minimist-options": "^4.1.0"
+  }
 }

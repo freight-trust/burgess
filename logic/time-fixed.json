@@ -1,0 +1,59 @@
+"PeriodEnum": : "The enumerated values to specify the period, e.g. day, week.",
+"synonym"[
+  "FpML_5_10",
+  "CME_SubmissionIRS_1_0",
+  "CME_ClearedConfirm_1_17",
+  "value": "PeriodEnum",
+  "D": "Day",
+  "synonym"[
+    "FpML_5_10",
+    "CME_SubmissionIRS_1_0",
+    "CME_ClearedConfirm_1_17",
+    "value": "D",
+    "W": "Week",
+    "synonym"[
+      "FpML_5_10",
+      "CME_SubmissionIRS_1_0",
+      "CME_ClearedConfirm_1_17",
+      "value": "W",
+      "M": "Month",
+      "synonym"[
+        "FpML_5_10",
+        "CME_SubmissionIRS_1_0",
+        "CME_ClearedConfirm_1_17",
+        "value": "M",
+        "Y": "Year",
+        "synonym"[
+          "FpML_5_10",
+          "CME_SubmissionIRS_1_0",
+          "CME_ClearedConfirm_1_17",
+          "value": "Y",
+          "PeriodExtendedEnum": : [
+            extendsPeriodEnum: : "The enumerated values to specify a time period containing the additional "value": "ofTerm." ]
+	"synonym" [ "FpML_5_10", "CME_SubmissionIRS_1_0", "CME_ClearedConfirm_1_17", "value": "PeriodExtendedEnum", ]
+	"T": "Term.Theperiodcommencingontheeffectivedateandendingontheterminationdate.TheTperiodalwaysappearsinassociationwithperiodMultiplier=1,
+            andthenotationisintendedforuseincontextswheretheintervalthusqualified(e.g.accrualperiod,
+            paymentperiod,
+            resetperiod,
+            ...)spanstheentiretermofthetrade.",
+		"synonym" [ "FpML_5_10", "CME_SubmissionIRS_1_0", "CME_ClearedConfirm_1_17", "value": "T",
+
+		
+ "PeriodTimeEnum":: "TheenumerationvaluestospecifyatimeperiodcontainingadditionalvaluessuchasTerm.",
+	"synonym" [ "FpML_5_10", "value": "PeriodTimeEnum" ]
+	"Hour": "Periodmeasuredinhours.",
+		"synonym" [ "FpML_5_10", "value": "Hour" ]
+	"Minute": "Periodmeasuredinminutes.",
+		"synonym" [ "FpML_5_10", "value": "Minute" ]
+	"Second": "Periodmeasuredinseconds.",
+		"synonym" [ "FpML_5_10", "value": "Second" ]
+		
+ "TimeUnitEnum":: "Theenumerationvaluestoqualifytheallowedunitsoftime.",
+
+	"Second": "Second",
+	"Minute": "Minute",
+	"Hour": "Hour",
+	"Day": "Day",
+	"Week": "Week",
+	"Month": "Month",
+	"Year": "Year",		
